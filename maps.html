@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stang</title>
+    <link rel="stylesheet" href="style/style_2.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <img src="#" style="width: 213px; height: 53px; margin-top: 24px; margin-left: 101px; float: left; background-color: #D9D9D9;">
+        <div id="links_top">
+            <a href="#">О компании</a>
+            <a href="#">Каталог</a>
+            <a href="maps.html">Контакты</a>
+            <a href="often_question.html">Частые вопросы</a>
+        </div>
+        <div id="phone">
+            <span>8-800-700-97-10</span>
+            <br>
+            <p>бесплатный звонок по всей России</p>
+        </div>
+    </header>
+    <div class="menu">
+        <div id="address">Адрес: <br>
+            141006, Московская область,г. Мытищи,  <br>
+            1-й Рупасовский пер., д. 6В
+        </div>
+        <div id="work_time">Время работы: <br>
+            пн-чт 9:00 - 18:00 мск <br>
+            (заезд на склад с 9:00 - 16:00 мск) <br>
+            пт 9:00 - 16:00 мск <br>
+            (заезд на склад с 9:00 - 15:00 мск)
+        </div>
+    </div>
+    <div class="block" id="map">
+
+    </div>
+    <div class="voprosy">
+        <p id="vopr_1">Остались вопросы?</p>
+        <span id="zayavka">Оставьте заявку, и наш менеджер свяжется с вами <span id="color_red">в течение часа</span></span>
+        <div class="inp">
+            <input id="inp_1" type="text" placeholder="ВАШЕ ИМЯ">
+            <input id="inp_2" type="text" placeholder="ВАШ ТЕЛЕФОН">
+            <button style="width: 250px; height: 55px; background-color: #601FEB; margin-top: 40px; margin-left: 2%; color: white; border-radius: 5px;">Отправить</button>
+        </div>
+        <div>
+            <span id="last_span">Нажимая на кнопку "Отправить", вы соглашаетесь с политикой <u>конфиденциальности</u></span>
+        </div>
+    </div>
+    <footer>
+        <img src="#" style="width: 213px; height: 53px; margin-top: 24px; margin-left: 101px; float: left; background-color: #D9D9D9;">
+        <div>
+            <p id="contacts">Контакты</p>
+            <br>
+            <span id="contacts_2">8-800-700-97-10</span>
+        </div>
+        <div id="mail">msk@mail.ru</div>
+        <!-- <div>
+            <p id="soc_media">Социальные сети</p>
+            <img id="soc_m_logo" src="https://img.favpng.com/10/19/20/telegram-nuget-computer-icons-internet-png-favpng-esv2LABGdssyD3GVhvrqW6ha8.jpg" alt="Телеграм">
+        </div> -->
+    </footer>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&ns=myNameSpace" type="text/javascript"></script>
+<script type="text/javascript">
+var myMap;
+myNameSpace.ready(function(){
+    myMap = new myNameSpace.Map("map", {
+        center: [55.928784, 37.746747], 
+        zoom: 12,
+    });
+    
+}); 
+</script>
+</body>
+</html>
